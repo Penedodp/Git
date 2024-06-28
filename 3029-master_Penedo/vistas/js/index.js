@@ -1,4 +1,4 @@
-function toggleForms() {
+function alternarForms() {
     const loginForm = document.getElementById('login-form');
     const registerForm = document.getElementById('register-form');
     if (loginForm.style.display === 'none') {
@@ -10,7 +10,7 @@ function toggleForms() {
     }
 }
 
-function showVideo(id) {
+function mostrarVideo(id) {
     const videoThumbnail = document.getElementById('video-thumbnail-' + id);
     if (videoThumbnail) {
         videoThumbnail.style.display = 'block';
@@ -18,7 +18,7 @@ function showVideo(id) {
     }
 }
 
-function hideVideo(id) {
+function ocultarVideo(id) {
     const videoThumbnail = document.getElementById('video-thumbnail-' + id);
     if (videoThumbnail) {
         videoThumbnail.style.display = 'none';
@@ -29,6 +29,6 @@ function hideVideo(id) {
 
 
 const carousel = new bootstrap.Carousel(document.querySelector('.carousel'), {
-    interval: 1000, 
+    interval: 500, 
     ride: 'carousel'
 });
